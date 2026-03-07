@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Icon Animation</title>
+<style>
+
+  
+  body {
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #f0c060;
+  }
+
+  p {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 50px;
+  }
+
+  
+  .icon {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    border-radius: 34px;          
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+
+    animation: float 3s ease-in-out infinite;
+  }
+
+  
+  .icon .star {
+    font-size: 64px;
+
+    
+    animation: spin 6s linear infinite;
+  }
+
+  
+  button {
+    background: #f0c060;
+    color: #111;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 6px;
+  }
+
+  button:hover {
+    background: #ffd980;
+  }
+
+
+
+
+  @keyframes float {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+  }
+
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+
+  
+  @keyframes bounce {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-30px); }
+    50%  { transform: translateY(-10px); }
+    70%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+
+  
+  @keyframes shake {
+    0%   { transform: rotate(0deg); }
+    20%  { transform: rotate(-10deg); }
+    40%  { transform: rotate(10deg); }
+    60%  { transform: rotate(-8d
+  }
+
+</style>
+</head>
+<body>
+
+  <h1>✦ App Icon Animation</h1>
+  <p>Click a button to change the animation</p>
+
+  
+  <div class="icon" id="icon">
+    <span class="star" id="star">⭐</span>
+  </div>
+
+  <button onclick="setAnim('float')">🌊 Float</button>
+  <button onclick="setAnim('spin')">🌀 Spin</button>
+  <button onclick="setAnim('bounce')">🏀 Bounce</button>
+  <button onclick="setAnim('shake')">📳 Shake</button>
+  <button onclick="setAnim('pulse')">💓 Pulse</button>
+  <button onclick="setAnim('none')">⏹ Stop</button>
+
+  <br><br>
+
+  <p style="margin-top:20px; margin-bottom:10px;">Change icon emoji:</p>
+  <button onclick="setEmoji('⭐')">⭐</button>
+  <button onclick="setEmoji('🚀')">🚀</button>
+  <button onclick="setEmoji('🎮')">🎮</button>
+  <button onclick="setEmoji('💎')">💎</button>
+  <button onclick="setEmoji('🔥')">🔥</button>
+  <button onclick="setEmoji('🎵')">🎵</button>
+
+<script>
+
+  function setAnim(name) {
+    const icon = document.getElementById('icon');
+    
+    icon.style.animation = 'none';
+
+    if (name === 'none') return; 
+    
+    setTimeout(function() {
+      icon.style.animation = name + ' 2s ease-in-out infinite';
+    }, 10);
+  }
+
+  
+  function setEmoji(emoji) {
+    document.getElementById('star').textContent = emoji;
+  }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+x*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f7fb;
+color:#333;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:white;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#2563eb;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 60px;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.hero p{
+margin-bottom:25px;
+line-height:1.6;
+}
+
+.btn{
+background:#2563eb;
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:5px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero img{
+width:400px;
+border-radius:10px;
+}
+
+/* BENEFITS */
+
+.benefits{
+padding:60px;
+text-align:center;
+}
+.benefits h2{
+margin-bottom:40px;
+}
+
+.benefit-grid{
+display:flex;
+justify-content:center;
+gap:30px;
+}
+
+.benefit{
+background:white;
+padding:30px;
+border-radius:10px;
+width:250px;
+box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.benefit img{
+width:50px;
+margin-bottom:15px;
+}
+
+/* MENTORS */
+
+.mentors{
+padding:60px;
+text-align:center;
+}
+
+.mentor-grid{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+width:200px;
+box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+/* CTA */
+
+.cta{
+background:#2563eb;
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+.cta h2{
+margin-bottom:20px;
+}
+
+.cta a{
+background:white;
+color:#2563eb;
+padding:12px 25px;
+border-radius:5px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+background:#111827;
+color:#ddd;
+padding:40px 20px;
+text-align:center;
+margin-top:40px;
+}
+
+footer a{
+color:#9ca3af;
+margin:0 10px;
+text-decoration:none;
+}
