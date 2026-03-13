@@ -1,0 +1,155 @@
+
+/* Basic reset*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/* Body styling*/
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height:80vh;
+    background: color #e8f5e9;
+}
+/* container to hold everything*/
+.container{
+    background-color: #ffffff;
+    border-radius:12px;
+    padding: 30px 40px
+    box-shadow 0 8px 20px, rgba(0,0,0,0.1);
+    width: 500px;; 
+}
+/* Heading styling */
+h1{
+    font: size 1.2em;
+    margin-bottom:20px;
+    font-weight:700;
+    color: #2e7d32;
+    text-align:center;
+}
+/*Input containers for task entry*/
+.input-container{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 70px;
+    padding: 10px;
+    font-size: 2rem;
+    border: 2px solid #2e7d32;
+    outline: none;
+    transition: 0.3s;
+}
+input[type="text"]:focus {
+    border-color:#1b5e20;
+    box-shadow: 0 0 5px #1b5e20 ;
+}
+/*Add button styling*/
+button{
+    padding:12px 20px;
+    background-color:#2e7d32;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    font-size:2rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+button:hover{
+    background-color:#1b5e20;
+}
+/*Task info container (counter and clear button)*/
+.task-info{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+    padding:8px 0;
+}
+/*Task counter styling*/
+#task counter {
+    font-size:0.83rem;
+    color:#6c757d;
+}
+/* clear completed button*/
+.clear-btn{
+    padding: 10px 15px;
+    background-color:#43a047;
+    color:#fff;
+    border: none;
+    border-radius:12px;
+    font-size: 0.83rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+.clear-btn:hover {
+    background-color:#2e7d32;
+}
+/*Task list styling*/
+ul{
+    list-style: none;
+    padding:0;
+}
+/*Task item styling*/
+li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0;
+    border-bottom:1px dashed #ccc;
+    font-size:1rem;
+}
+/*Task text styling*/
+.task-text{
+    flex:2;
+    margin:0 10px;
+    word-break: break-word;
+}
+/*complete button styling*/
+.complete-btn{
+    background-color: transparent !important;
+    color: #43a047;
+    font-size:1.3rem !important;
+    border: none !important;
+    cursor: pointer;
+    margin: right 4px;
+    transition: o 0.3px;
+    padding: 4px !important;
+} 
+.complete-btn:hover{
+    color: #2e7d32 !important;
+}
+/*Edit button styling*/
+.edit-btn{
+    background-color: transparent !important;
+    color: #43a047;
+    font-size: 1.3rem ! important;
+    border: none !important;
+    cursor:pointer;
+    margin-right: 5px;
+    transition: 0.3s;
+    padding:4px !important;
+}
+.edit-btn:hover{
+    color:#2e7d32 !important
+}
+/*Remove button*/
+.remove-btn{
+  background-color: #e53935 !important;
+  color: none !important;
+  border-radius: 7px;
+  padding:8px,12px !important;
+  cursor: pointer; 
+  font-size:0.8rem !important;
+  transition:0.3s; 
+}
+.remove-btn:hover { 
+    background-color: #c62828 !important;
+}
+/*Task completion styling*/
+.completed{
+    text-decoration:line-through;
+    color: #6c757d;
+} 
